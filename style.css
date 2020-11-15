@@ -11,6 +11,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 }
 
 .container {
@@ -89,15 +90,11 @@ h1 {
 }
 
 .irene {
-	position: absolute;
-	left: 31.5rem;
-	bottom: 4rem;
+	transform: translateY(1rem);
 }
 
 .anne {
-	position: absolute;
-	right: 10rem;
-	bottom: 3rem;
+	transform: translateY(2rem);
 }
 .rating {
 	margin-top: 2rem;
@@ -114,7 +111,7 @@ h1 {
 .name {
 	font-weight: 700;
 }
-@media only screen and (min-width: 375px) and (max-width: 600px) {
+@media only screen and (min-width: 375px) and (max-width: 1024px) {
 	.container {
 		padding: 3rem;
 		position: static;
@@ -154,15 +151,15 @@ h1 {
 	}
 
 	.irene {
-		position: static;
+		transform: translateY(0);
 	}
 
 	.anne {
-		position: static;
+		transform: translateY(0);
 	}
 
 	.testimonial .card {
-		min-width: 20rem;
+		width: 90%;
 		margin: auto;
 		margin-bottom: 2rem;
 	}
