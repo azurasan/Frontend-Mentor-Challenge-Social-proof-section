@@ -7,7 +7,7 @@
 
 body {
 	font-size: 15px;
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -17,6 +17,7 @@ body {
 .container {
 	padding: 5rem 10rem;
 	position: relative;
+	overflow: auto;
 }
 
 .container .row-one {
